@@ -15,7 +15,7 @@ class UserController extends Controller
         $req->validate([
             'name' => 'nullable|string|max:250',
             'local_name' => 'nullable|string|max:250',
-            'gender' => 'nullable|in:1,2', // Only 1 (male) or 2 (female)
+            'gender' => 'nullable|in:1,2', 
         ]);
 
         if ($req->has('name')) {
